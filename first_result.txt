@@ -1,0 +1,29 @@
+First correction
+23:15:31 -> 0:57:0
+
+10:07:01 -> 11:48:00
+39090 segundos -> 39060
+
+Second correction : first attempt
+10:25:33(~32) -> 0:1:0
+Failed miserably
+
+
+Second correction : second attempt
+22:52:24 -> 0:1:0
+
+13:49:21 -> 14:58:0
+53817 segundos -> 53820
+
+
+Third correction
+14:04:38 -> 0:1:0
+
+10:12:39 -> 20:9:0
+72481 segundos -> 72480
+
+
+Fourth correction
+15:42:50 -> 0:6:0
+
+10:51:58 -> 19:14:0

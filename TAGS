@@ -1,0 +1,42 @@
+
+NixieClock.h,873
+#define NIXIECLOCK_H NIXIECLOCK_H2,21
+typedef char int8;int85,89
+typedef byte uint8;uint86,108
+typedef short int16;int167,128
+typedef unsigned short uint16;uint168,149
+typedef long int32;int329,180
+typedef unsigned long uint32;uint3210,200
+enum time_change {time_change12,231
+    seconds_change = 1,seconds_change13,250
+    minutes_change = 2,minutes_change14,274
+    hours_change = 4,hours_change15,298
+    years_change = 1,years_change17,321
+    months_change = 2,months_change18,343
+    days_change = 4,days_change19,366
+    change_all = 7change_all21,388
+#define IN_HMS0 IN_HMS024,411
+#define IN_HMS1 IN_HMS125,429
+#define IN_ADJUST IN_ADJUST26,447
+#define IN_SOUND IN_SOUND27,467
+#define IN_DATE_TIME IN_DATE_TIME28,486
+#define DISPLAY_TIME DISPLAY_TIME30,510
+#define DISPLAY_DATE DISPLAY_DATE31,549
+#define nop(nop33,573
+
+random_animation_generator.c,556
+typedef int8_t int8;int86,78
+typedef int16_t int16;int167,99
+typedef int32_t int32;int328,122
+typedef int64_t int64;int649,145
+typedef size_t   usize;usize11,169
+typedef uint8_t  uint8;uint812,193
+typedef uint16_t uint16;uint1613,217
+typedef uint32_t uint32;uint3214,242
+typedef uint64_t uint64;uint6415,267
+typedef unsigned int uint;uint16,292
+typedef int bool;bool18,320
+#define FALSE FALSE19,338
+#define TRUE TRUE20,354
+void shuffle(uint* array, usize array_size) {shuffle22,371
+int main(int argc, char** argv) {main33,679
