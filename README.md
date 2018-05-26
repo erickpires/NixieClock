@@ -37,13 +37,10 @@ An alarm clock functionality is planned, but not yet implemented.
 
 Here are two photos of the clock working.
 
-[Image 1](Images/IMG_20180526_154434791_HDR.jpg?raw=true)
+![Image 1](Images/IMG_20180526_154434791_HDR.jpg?raw=true)
 
-[Image 2](Images/IMG_20180526_154438831_HDR.jpg?raw=true)
+![Image 2](Images/IMG_20180526_154438831_HDR.jpg?raw=true)
 
 and a video:
 
-<video controls="controls">
-  <source type="video/mp4" src="Images/VID_20180526_154449329.mp4?raw=true"></source>
-  <p>Your browser does not support the video element.</p>
-</video>
+[![Video](https://img.youtube.com/vi/pQ4-Zf7qyXU/0.jpg)](https://youtu.be/pQ4-Zf7qyXU)
