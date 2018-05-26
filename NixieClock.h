@@ -30,17 +30,21 @@ enum time_change {
 #define DISPLAY_TIME 1 << IN_DATE_TIME
 #define DISPLAY_DATE 0
 
-#define nop() __asm__("nop\n\t")
+#define INITIAL_DISPLAY_FADE_TIMEOUT 5
+
+#define nop() __asm__ volatile("nop\n\t")
 
 // --- Forward declaration ---
 uint8 increment_seconds(void);
-void increment_days(void);
-void adjust_time(int8);
+void  increment_days(void);
+void  adjust_time(int8);
 
 void display(int8, uint8);
 void update_display(uint8, uint8);
 
 void read_inputs(void);
+
+uint8 expected_display_state();
 
 void read_rotary_encoder(void);
 

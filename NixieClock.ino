@@ -28,13 +28,13 @@ const uint8 days_in_mounths[] =
 
 const static uint8 div10_quot_rem_table[] PROGMEM =
 {
-    0, 1, 2, 3, 4, 5, 6, 7, 8, 9,
-    16, 17, 18, 19, 20, 21, 22, 23, 24, 25,
-    32, 33, 34, 35, 36, 37, 38, 39, 40, 41,
-    48, 49, 50, 51, 52, 53, 54, 55, 56, 57,
-    64, 65, 66, 67, 68, 69, 70, 71, 72, 73,
-    80, 81, 82, 83, 84, 85, 86, 87, 88, 89,
-    96, 97, 98, 99, 100, 101, 102, 103, 104, 105,
+    0,    1,    2,   3,   4,   5,   6,   7,   8,   9,
+    16,  17,   18,  19,  20,  21,  22,  23,  24,  25,
+    32,  33,   34,  35,  36,  37,  38,  39,  40,  41,
+    48,  49,   50,  51,  52,  53,  54,  55,  56,  57,
+    64,  65,   66,  67,  68,  69,  70,  71,  72,  73,
+    80,  81,   82,  83,  84,  85,  86,  87,  88,  89,
+    96,  97,   98,  99, 100, 101, 102, 103, 104, 105,
     112, 113, 114, 115, 116, 117, 118, 119, 120, 121,
     128, 129, 130, 131, 132, 133, 134, 135, 136, 137,
     144, 145, 146, 147, 148, 149, 150, 151, 152, 153
@@ -45,12 +45,13 @@ static uint8 input_array[N_INPUT_SAMPLES];
 
 static uint8 input_valid_bits;
 static uint8 input_bitfield;
+static uint8 old_input_bitfield;
 static uint8 input_array_current_index = 0;
 static uint8 new_input_flag = 0;
 
-#define turn_display_on()  PORTB |=  (1 << 5)
-#define turn_display_off() PORTB &= ~(1 << 5)
-#define is_display_on() PINB &= ~(1 << 5)
+#define turn_display_on()  PORTB &=  ~(1 << 5)
+#define turn_display_off() PORTB |=   (1 << 5)
+#define is_display_on() (!(PINB & (1 << 5)))
 
 static volatile uint16 milliseconds = 0;
 static volatile uint8 seconds_flag = 0;
@@ -66,6 +67,8 @@ static int8 clock_current_year = 0;
 
 static uint8 display_mode = DISPLAY_TIME;
 static uint8 clock_is_running = 1;
+
+static uint8 display_fade_timeout = 0; // Minutes
 
 // This Rotary Encoder code is base on the code by mathertel
 // https://github.com/mathertel/RotaryEncoder
@@ -193,6 +196,7 @@ void setup() {
     interrupts();
 
     update_display(change_all);
+
 }
 
 // --- Timer 1 interrupt routine ---
@@ -227,6 +231,8 @@ ISR(PCINT0_vect) {
     if (rotary_encoder_current_position != rotary_encoder_position) {
         int8 diff = (int8) (rotary_encoder_current_position - rotary_encoder_position);
         rotary_encoder_current_position = rotary_encoder_position;
+
+        display_fade_timeout = INITIAL_DISPLAY_FADE_TIMEOUT;
 
         if(!clock_is_running) {
             adjust_time(diff);
@@ -392,6 +398,7 @@ inline void read_inputs() {
     input_array_current_index = (input_array_current_index + 1) & 0x0f; // increment modulo 16
 
     if(input_array_current_index == 0) {
+        old_input_bitfield = input_bitfield;
         input_bitfield = input_array[N_INPUT_SAMPLES - 1]; // Last read sample
 
         // README: This loop would be very happy been unrolled
@@ -427,29 +434,28 @@ void loop() {
 
         if(input_valid_bits & (1 << IN_ADJUST)) {
             clock_is_running = input_bitfield & (1 << IN_ADJUST);
-            // NOTE(erick): If we are animating and change to adujust
+            // NOTE(erick): If we are animating and change to adjust
             // mode the animation has to stop.
             if(!clock_is_running && is_animating) {
                 stop_animation();
             }
         }
+
+        // NOTE(erick): If some input has changed since last time
+        // and this input is valid, set the display fade timeout.
+        if((old_input_bitfield ^ input_bitfield) & input_valid_bits) {
+            display_fade_timeout = INITIAL_DISPLAY_FADE_TIMEOUT;
+        }
     }
 
     if(seconds_flag) {
         seconds_flag = 0;
-        // digitalWrite(13, !digitalRead(13));
+
+        digitalWrite(13, digitalRead(13));
 
         if(clock_is_running) {
             uint8 change = increment_seconds();
 
-            if(change & change_hour) {
-                if(is_in_display_off_range() && is_display_on()) {
-                    turn_off_display();
-                }
-                if(!is_in_display_off_range() && !is_display_on()) {
-                    turn_on_display();
-                }
-            }
             // NOTE(erick): If we are here the clock
             // is running (i.e. not adjusting) and we have an
             // exact minute. These are the conditions to start
@@ -460,13 +466,41 @@ void loop() {
             } else if(change) {
                 update_display(change);
             }
+
+            if(display_fade_timeout &&
+               (change & seconds_change)) {
+                display_fade_timeout--;
+            }
         }
     }
+
+    uint8 should_display_be_on  = expected_display_state();
+    uint8 should_display_be_off = !should_display_be_on;
+
+    if(is_display_on() && should_display_be_off) {
+        turn_display_off();
+    }
+
+    if(!is_display_on() && should_display_be_on) {
+        turn_display_on();
+    }
+
 
     if(new_animation_step_flag) {
         new_animation_step_flag = 0;
         update_display(change_all);
     }
+
+}
+
+uint8 expected_display_state() {
+    if(display_fade_timeout) { return true; }
+
+    // NOTE(erick): If !clock_is_running (a.k.a. adjust mode) the
+    // display should always be on.
+    if(!clock_is_running) { return true; }
+
+    return !is_in_display_off_range();
 }
 
 uint8 verify_and_correct_date() {
