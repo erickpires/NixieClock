@@ -1,0 +1,619 @@
+Cmp-Mod V01 Created by Cvpcb (2014-12-26 BZR 5338)-product   date = Lördag 07 Februari 2015 16:05:11
+
+BeginCmp
+TimeStamp = /5498925D/549895A3;
+Reference = C1;
+ValeurCmp = 100n;
+IdModule  = smd_capacitors:c_0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /5498925D/549C28CB;
+Reference = C2;
+ValeurCmp = 100n;
+IdModule  = smd_capacitors:c_0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /54989D2D/5499B01F;
+Reference = C3;
+ValeurCmp = 220u;
+IdModule  = capacitors:CP_8x13mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /54989D2D/5499C5CC;
+Reference = C4;
+ValeurCmp = 100n;
+IdModule  = smd_capacitors:c_0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /54989D2D/5499C5DE;
+Reference = C5;
+ValeurCmp = 100n;
+IdModule  = smd_capacitors:c_0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /54989D2D/5499A910;
+Reference = C6;
+ValeurCmp = 1u;
+IdModule  = capacitors:CP_5x6mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /54989D2D/549998EE;
+Reference = C7;
+ValeurCmp = 220u;
+IdModule  = capacitors:CP_8x13mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /54989D2D/549999E6;
+Reference = C8;
+ValeurCmp = 0.22u;
+IdModule  = ref-packages:C102-054X133;
+EndCmp
+
+BeginCmp
+TimeStamp = /54989D2D/54999D0D;
+Reference = C9;
+ValeurCmp = 1n;
+IdModule  = smd_capacitors:c_0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /54989D2D/54989E04;
+Reference = C10;
+ValeurCmp = C;
+IdModule  = smd_capacitors:c_0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /54989F02/5499D54C;
+Reference = C11;
+ValeurCmp = 100n;
+IdModule  = smd_capacitors:c_0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /54989F02/5499EDDB;
+Reference = C12;
+ValeurCmp = 100n;
+IdModule  = smd_capacitors:c_0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /54989D2D/54A5B7AB;
+Reference = C13;
+ValeurCmp = 100n;
+IdModule  = smd_capacitors:c_0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /54989D2D/54A5B98E;
+Reference = C14;
+ValeurCmp = 100n;
+IdModule  = smd_capacitors:c_0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /54989D2D/54A5BB99;
+Reference = C15;
+ValeurCmp = C;
+IdModule  = smd_capacitors:c_0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /54989D2D/5499B31E;
+Reference = CON1;
+ValeurCmp = BARREL_JACK;
+IdModule  = connect:BARREL_JACK;
+EndCmp
+
+BeginCmp
+TimeStamp = /54989D2D/5499B33B;
+Reference = D1;
+ValeurCmp = 1N5819;
+IdModule  = discret:D3;
+EndCmp
+
+BeginCmp
+TimeStamp = /54989D2D/5499C9C4;
+Reference = D2;
+ValeurCmp = 1N5819;
+IdModule  = discret:D3;
+EndCmp
+
+BeginCmp
+TimeStamp = /54989D2D/5499CA97;
+Reference = D3;
+ValeurCmp = 1N5819;
+IdModule  = discret:D3;
+EndCmp
+
+BeginCmp
+TimeStamp = /54989D2D/549999BF;
+Reference = D4;
+ValeurCmp = EGP20D;
+IdModule  = discret:D3;
+EndCmp
+
+BeginCmp
+TimeStamp = /54989D2D/54989DF4;
+Reference = D5;
+ValeurCmp = 75V;
+IdModule  = discret:D3;
+EndCmp
+
+BeginCmp
+TimeStamp = /54989F02/5499E545;
+Reference = D6;
+ValeurCmp = 5V1;
+IdModule  = discret:D3;
+EndCmp
+
+BeginCmp
+TimeStamp = /54989D2D/549998AE;
+Reference = L1;
+ValeurCmp = 220uH;
+IdModule  = inductors:INDUCTOR_V;
+EndCmp
+
+BeginCmp
+TimeStamp = /54989F02/5499CE64;
+Reference = P1;
+ValeurCmp = CONN_5;
+IdModule  = pin_array:PIN_ARRAY_5x1;
+EndCmp
+
+BeginCmp
+TimeStamp = /5498925D/549894FB;
+Reference = Q1;
+ValeurCmp = MPSA92;
+IdModule  = discret:TO92-CBE;
+EndCmp
+
+BeginCmp
+TimeStamp = /5498925D/54989501;
+Reference = Q2;
+ValeurCmp = MPSA92;
+IdModule  = discret:TO92-CBE;
+EndCmp
+
+BeginCmp
+TimeStamp = /5498925D/5498952B;
+Reference = Q3;
+ValeurCmp = MPSA92;
+IdModule  = discret:TO92-CBE;
+EndCmp
+
+BeginCmp
+TimeStamp = /5498925D/54989531;
+Reference = Q4;
+ValeurCmp = MPSA92;
+IdModule  = discret:TO92-CBE;
+EndCmp
+
+BeginCmp
+TimeStamp = /5498925D/549895BB;
+Reference = Q5;
+ValeurCmp = MPSA92;
+IdModule  = discret:TO92-CBE;
+EndCmp
+
+BeginCmp
+TimeStamp = /5498925D/549895C1;
+Reference = Q6;
+ValeurCmp = MPSA92;
+IdModule  = discret:TO92-CBE;
+EndCmp
+
+BeginCmp
+TimeStamp = /5498925D/549895EB;
+Reference = Q7;
+ValeurCmp = MPSA92;
+IdModule  = discret:TO92-CBE;
+EndCmp
+
+BeginCmp
+TimeStamp = /5498925D/549895F1;
+Reference = Q8;
+ValeurCmp = MPSA92;
+IdModule  = discret:TO92-CBE;
+EndCmp
+
+BeginCmp
+TimeStamp = /54989D2D/54A45654;
+Reference = Q9;
+ValeurCmp = BC857;
+IdModule  = smd_transistors:sot23;
+EndCmp
+
+BeginCmp
+TimeStamp = /54989D2D/54A47B3A;
+Reference = Q10;
+ValeurCmp = BC847;
+IdModule  = smd_transistors:sot23;
+EndCmp
+
+BeginCmp
+TimeStamp = /54989D2D/54D619B0;
+Reference = Q11;
+ValeurCmp = IRLML6402;
+IdModule  = libcms:SOT23GDS;
+EndCmp
+
+BeginCmp
+TimeStamp = /54989D2D/54A456F1;
+Reference = Q12;
+ValeurCmp = BC857;
+IdModule  = smd_transistors:sot23;
+EndCmp
+
+BeginCmp
+TimeStamp = /54989D2D/5499987A;
+Reference = Q13;
+ValeurCmp = IRF740;
+IdModule  = pretty-libs:TO220GDS_VERT;
+EndCmp
+
+BeginCmp
+TimeStamp = /5498925D/5498950D;
+Reference = R1;
+ValeurCmp = 330k;
+IdModule  = pretty-libs:R3-mod;
+EndCmp
+
+BeginCmp
+TimeStamp = /5498925D/54989507;
+Reference = R2;
+ValeurCmp = 330;
+IdModule  = pretty-libs:R3-mod;
+EndCmp
+
+BeginCmp
+TimeStamp = /5498925D/5498953D;
+Reference = R3;
+ValeurCmp = 330k;
+IdModule  = pretty-libs:R3-mod;
+EndCmp
+
+BeginCmp
+TimeStamp = /5498925D/54989537;
+Reference = R4;
+ValeurCmp = 330;
+IdModule  = pretty-libs:R3-mod;
+EndCmp
+
+BeginCmp
+TimeStamp = /5498925D/549895CD;
+Reference = R5;
+ValeurCmp = 330k;
+IdModule  = pretty-libs:R3-mod;
+EndCmp
+
+BeginCmp
+TimeStamp = /5498925D/549895C7;
+Reference = R6;
+ValeurCmp = 330;
+IdModule  = pretty-libs:R3-mod;
+EndCmp
+
+BeginCmp
+TimeStamp = /5498925D/549895FD;
+Reference = R7;
+ValeurCmp = 330k;
+IdModule  = pretty-libs:R3-mod;
+EndCmp
+
+BeginCmp
+TimeStamp = /5498925D/549895F7;
+Reference = R8;
+ValeurCmp = 330;
+IdModule  = pretty-libs:R3-mod;
+EndCmp
+
+BeginCmp
+TimeStamp = /54989D2D/5499A147;
+Reference = R9;
+ValeurCmp = 22k;
+IdModule  = pretty-libs:R0805_smd-mod;
+EndCmp
+
+BeginCmp
+TimeStamp = /54989D2D/54D63483;
+Reference = R10;
+ValeurCmp = 22k;
+IdModule  = pretty-libs:R0805_smd-mod;
+EndCmp
+
+BeginCmp
+TimeStamp = /54989D2D/5499A3C6;
+Reference = R11;
+ValeurCmp = 22k;
+IdModule  = pretty-libs:R0805_smd-mod;
+EndCmp
+
+BeginCmp
+TimeStamp = /54989D2D/54D6302A;
+Reference = R12;
+ValeurCmp = 560k;
+IdModule  = pretty-libs:R0805_smd-mod;
+EndCmp
+
+BeginCmp
+TimeStamp = /54989D2D/5499A0AF;
+Reference = R13;
+ValeurCmp = 22k;
+IdModule  = pretty-libs:R0805_smd-mod;
+EndCmp
+
+BeginCmp
+TimeStamp = /54989D2D/5499A028;
+Reference = R14;
+ValeurCmp = 2;
+IdModule  = pretty-libs:R3-mod;
+EndCmp
+
+BeginCmp
+TimeStamp = /54989D2D/5499E906;
+Reference = R15;
+ValeurCmp = 47k;
+IdModule  = pretty-libs:R0805_smd-mod;
+EndCmp
+
+BeginCmp
+TimeStamp = /54989D2D/54999C9C;
+Reference = R16;
+ValeurCmp = 820k;
+IdModule  = pretty-libs:R3-mod;
+EndCmp
+
+BeginCmp
+TimeStamp = /54989D2D/54999CAE;
+Reference = R17;
+ValeurCmp = 12k;
+IdModule  = pretty-libs:R3-mod;
+EndCmp
+
+BeginCmp
+TimeStamp = /54989D2D/54989DEE;
+Reference = R18;
+ValeurCmp = 220k;
+IdModule  = pretty-libs:R3-mod;
+EndCmp
+
+BeginCmp
+TimeStamp = /54989F02/5499D365;
+Reference = R19;
+ValeurCmp = 33k;
+IdModule  = pretty-libs:R0805_smd-mod;
+EndCmp
+
+BeginCmp
+TimeStamp = /54989F02/5499DC65;
+Reference = R20;
+ValeurCmp = 33k;
+IdModule  = pretty-libs:R0805_smd-mod;
+EndCmp
+
+BeginCmp
+TimeStamp = /54989F02/5499DC77;
+Reference = R21;
+ValeurCmp = 33k;
+IdModule  = pretty-libs:R0805_smd-mod;
+EndCmp
+
+BeginCmp
+TimeStamp = /54989F02/5499DC82;
+Reference = R22;
+ValeurCmp = 33k;
+IdModule  = pretty-libs:R0805_smd-mod;
+EndCmp
+
+BeginCmp
+TimeStamp = /54989F02/5499F6DD;
+Reference = R23;
+ValeurCmp = 33k;
+IdModule  = pretty-libs:R0805_smd-mod;
+EndCmp
+
+BeginCmp
+TimeStamp = /54989F02/5499F6E8;
+Reference = R24;
+ValeurCmp = 33k;
+IdModule  = pretty-libs:R0805_smd-mod;
+EndCmp
+
+BeginCmp
+TimeStamp = /5498925D/54A5FB1C;
+Reference = R25;
+ValeurCmp = 33k;
+IdModule  = pretty-libs:R0805_smd-mod;
+EndCmp
+
+BeginCmp
+TimeStamp = /54989D2D/54A5E02B;
+Reference = R26;
+ValeurCmp = R;
+IdModule  = pretty-libs:R3-mod;
+EndCmp
+
+BeginCmp
+TimeStamp = /54989D2D/54A574A5;
+Reference = R27;
+ValeurCmp = R;
+IdModule  = pretty-libs:R3-mod;
+EndCmp
+
+BeginCmp
+TimeStamp = /54989F02/54A7D196;
+Reference = R28;
+ValeurCmp = 33k;
+IdModule  = pretty-libs:R0805_smd-mod;
+EndCmp
+
+BeginCmp
+TimeStamp = /54989D2D/54A2EE92;
+Reference = SW0;
+ValeurCmp = SWITCH_INV;
+IdModule  = pretty-libs:CL-SA-12C4-02;
+EndCmp
+
+BeginCmp
+TimeStamp = /54989F02/5499F6C0;
+Reference = SW1;
+ValeurCmp = SW_PUSH;
+IdModule  = switch:TL1105L-4,3;
+EndCmp
+
+BeginCmp
+TimeStamp = /54989F02/5499F6D2;
+Reference = SW2;
+ValeurCmp = SW_PUSH;
+IdModule  = switch:TL1105L-4,3;
+EndCmp
+
+BeginCmp
+TimeStamp = /54989F02/54A7D0F0;
+Reference = SW3;
+ValeurCmp = SW_PUSH;
+IdModule  = switch:TL1105L-4,3;
+EndCmp
+
+BeginCmp
+TimeStamp = /5498925D/5498951F;
+Reference = TBE1;
+ValeurCmp = IN14;
+IdModule  = pretty-libs:IN-14-mod;
+EndCmp
+
+BeginCmp
+TimeStamp = /5498925D/5498954F;
+Reference = TBE2;
+ValeurCmp = IN14;
+IdModule  = pretty-libs:IN-14-mod;
+EndCmp
+
+BeginCmp
+TimeStamp = /5498925D/549895DF;
+Reference = TBE3;
+ValeurCmp = IN14;
+IdModule  = pretty-libs:IN-14-mod;
+EndCmp
+
+BeginCmp
+TimeStamp = /5498925D/5498960F;
+Reference = TBE4;
+ValeurCmp = IN14;
+IdModule  = pretty-libs:IN-14-mod;
+EndCmp
+
+BeginCmp
+TimeStamp = /54989F02/54A35D08;
+Reference = TP1;
+ValeurCmp = TEST;
+IdModule  = connect:GS2;
+EndCmp
+
+BeginCmp
+TimeStamp = /54989F02/54A3791E;
+Reference = TP2;
+ValeurCmp = TEST;
+IdModule  = connect:GS2;
+EndCmp
+
+BeginCmp
+TimeStamp = /54989F02/54A3795F;
+Reference = TP3;
+ValeurCmp = TEST;
+IdModule  = connect:GS2;
+EndCmp
+
+BeginCmp
+TimeStamp = /5498925D/54A372B8;
+Reference = TP4;
+ValeurCmp = TEST;
+IdModule  = connect:GS2;
+EndCmp
+
+BeginCmp
+TimeStamp = /5498925D/54A3730A;
+Reference = TP5;
+ValeurCmp = TEST;
+IdModule  = connect:GS2;
+EndCmp
+
+BeginCmp
+TimeStamp = /5498925D/54A37215;
+Reference = TP6;
+ValeurCmp = TEST;
+IdModule  = connect:GS2;
+EndCmp
+
+BeginCmp
+TimeStamp = /5498925D/54A36BE7;
+Reference = TP7;
+ValeurCmp = TEST;
+IdModule  = connect:GS2;
+EndCmp
+
+BeginCmp
+TimeStamp = /54989D2D/54A38018;
+Reference = TP8;
+ValeurCmp = TEST;
+IdModule  = connect:GS2;
+EndCmp
+
+BeginCmp
+TimeStamp = /54989D2D/54A37D7A;
+Reference = TP9;
+ValeurCmp = TEST;
+IdModule  = connect:GS2;
+EndCmp
+
+BeginCmp
+TimeStamp = /5498925D/54989525;
+Reference = U1;
+ValeurCmp = HV5812;
+IdModule  = pretty-libs:SO28W-mod;
+EndCmp
+
+BeginCmp
+TimeStamp = /5498925D/549895E5;
+Reference = U2;
+ValeurCmp = HV5812;
+IdModule  = pretty-libs:SO28W-mod;
+EndCmp
+
+BeginCmp
+TimeStamp = /54989D2D/5499C5B8;
+Reference = U3;
+ValeurCmp = LM7805;
+IdModule  = powerint:TO-220;
+EndCmp
+
+BeginCmp
+TimeStamp = /54989F02/5499ED14;
+Reference = U4;
+ValeurCmp = DS32kHz;
+IdModule  = pretty-libs:SO16W-mod;
+EndCmp
+
+BeginCmp
+TimeStamp = /54989F02/5499C424;
+Reference = U5;
+ValeurCmp = PIC18F1320;
+IdModule  = pretty-libs:SO18L-mod;
+EndCmp
+
+BeginCmp
+TimeStamp = /54989D2D/54A58D14;
+Reference = U6;
+ValeurCmp = IRS44273;
+IdModule  = libcms:SOT23-5;
+EndCmp
+
+EndListe
