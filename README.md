@@ -5,7 +5,7 @@ I got inspired to build the clock after watching a video from [Techmoan](https:/
 
 ## The Nixies
 
-The Nixie Tubes were bought from eBay. They are IN-16 tubes desoldered from unused replacement board for old equipment (so the seller told me).
+The Nixie Tubes were bought from eBay. They are IN-14 tubes desoldered from unused replacement board for old equipment (so the seller told me).
 
 To drive the Nixies, six K155ID1 (the Russian version of the 74141) were also bought from eBay (which turned out to be a bad idea since those chips are very old, not reliable and consume too much power).
 
